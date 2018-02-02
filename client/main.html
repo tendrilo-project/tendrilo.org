@@ -2,24 +2,26 @@
   <title>tendrilo.org</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-  {{> info}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="main">
+    <h1>Tendrilo</h1>
+    {{> yield}}
+    <hr />
+    <p>Copyright &copy; Tendrilo, 2018.</p>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="home">
+    <h2>Home</h2>
+</template>
+
+<template name="about">
+  <div class="container">
+    <header>
+      <h1>About</h1>
+    </header>
+    <ul>
+        <li>tendril[0] = btc</li>
+        <li>tendril[1] = ltc</li>
+        <li>tendril[2] = eth</li>
+    </ul>
+  </div>
 </template>
